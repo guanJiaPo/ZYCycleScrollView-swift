@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2347023B858DFB125C408BBF /* Pods_ZYCycleScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1178CACA65E5E567CB8706F0 /* Pods_ZYCycleScrollView.framework */; };
+		5188742020BE557C009B6E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188741F20BE557C009B6E26 /* AppDelegate.swift */; };
+		5188742220BE557C009B6E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188742120BE557C009B6E26 /* ViewController.swift */; };
+		5188742520BE557C009B6E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5188742320BE557C009B6E26 /* Main.storyboard */; };
+		5188742720BE557D009B6E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5188742620BE557D009B6E26 /* Assets.xcassets */; };
+		5188742A20BE557D009B6E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5188742820BE557D009B6E26 /* LaunchScreen.storyboard */; };
+		5188743520BE557D009B6E26 /* ZYCycleScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188743420BE557D009B6E26 /* ZYCycleScrollViewTests.swift */; };
+		5188744020BE557D009B6E26 /* ZYCycleScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188743F20BE557D009B6E26 /* ZYCycleScrollViewUITests.swift */; };
+		5188744F20BE55E9009B6E26 /* ZYCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188744E20BE55E9009B6E26 /* ZYCycleScrollView.swift */; };
+		5188745120BE69A4009B6E26 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5188745020BE69A4009B6E26 /* Kingfisher.framework */; };
+		E34248B05034CF06DF38F3C7 /* Pods_ZYCycleScrollViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AB2BC9BB45A08BDBFADBA1 /* Pods_ZYCycleScrollViewUITests.framework */; };
+		F7DAB2FE4A91C6D393AE65F4 /* Pods_ZYCycleScrollViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C2E4A91A41C31FED767AEF /* Pods_ZYCycleScrollViewTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5188743120BE557D009B6E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5188741420BE557C009B6E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5188741B20BE557C009B6E26;
+			remoteInfo = ZYCycleScrollView;
+		};
+		5188743C20BE557D009B6E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5188741420BE557C009B6E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5188741B20BE557C009B6E26;
+			remoteInfo = ZYCycleScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1178CACA65E5E567CB8706F0 /* Pods_ZYCycleScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYCycleScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		358384BF1D8CC7D354E093A0 /* Pods-ZYCycleScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYCycleScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYCycleScrollView/Pods-ZYCycleScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		5188741C20BE557C009B6E26 /* ZYCycleScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYCycleScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5188741F20BE557C009B6E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5188742120BE557C009B6E26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5188742420BE557C009B6E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5188742620BE557D009B6E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5188742920BE557D009B6E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5188742B20BE557D009B6E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5188743020BE557D009B6E26 /* ZYCycleScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYCycleScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5188743420BE557D009B6E26 /* ZYCycleScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYCycleScrollViewTests.swift; sourceTree = "<group>"; };
+		5188743620BE557D009B6E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5188743B20BE557D009B6E26 /* ZYCycleScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYCycleScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5188743F20BE557D009B6E26 /* ZYCycleScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYCycleScrollViewUITests.swift; sourceTree = "<group>"; };
+		5188744120BE557D009B6E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5188744E20BE55E9009B6E26 /* ZYCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYCycleScrollView.swift; sourceTree = "<group>"; };
+		5188745020BE69A4009B6E26 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79AB2BC9BB45A08BDBFADBA1 /* Pods_ZYCycleScrollViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYCycleScrollViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CEA58EBC680C2917C0EB787 /* Pods-ZYCycleScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYCycleScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYCycleScrollView/Pods-ZYCycleScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		95B923DC5A093C2E8F3A48B7 /* Pods-ZYCycleScrollViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYCycleScrollViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYCycleScrollViewTests/Pods-ZYCycleScrollViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C64CE8FB7161667D4659ACA6 /* Pods-ZYCycleScrollViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYCycleScrollViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYCycleScrollViewUITests/Pods-ZYCycleScrollViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D98D5EDBEF275BF02E511D98 /* Pods-ZYCycleScrollViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYCycleScrollViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYCycleScrollViewUITests/Pods-ZYCycleScrollViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F3C2E4A91A41C31FED767AEF /* Pods_ZYCycleScrollViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYCycleScrollViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9019CA9952E85D78AABB2A0 /* Pods-ZYCycleScrollViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYCycleScrollViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYCycleScrollViewTests/Pods-ZYCycleScrollViewTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5188741920BE557C009B6E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5188745120BE69A4009B6E26 /* Kingfisher.framework in Frameworks */,
+				2347023B858DFB125C408BBF /* Pods_ZYCycleScrollView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5188742D20BE557D009B6E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DAB2FE4A91C6D393AE65F4 /* Pods_ZYCycleScrollViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5188743820BE557D009B6E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34248B05034CF06DF38F3C7 /* Pods_ZYCycleScrollViewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5188741320BE557C009B6E26 = {
+			isa = PBXGroup;
+			children = (
+				5188741E20BE557C009B6E26 /* ZYCycleScrollView */,
+				5188743320BE557D009B6E26 /* ZYCycleScrollViewTests */,
+				5188743E20BE557D009B6E26 /* ZYCycleScrollViewUITests */,
+				5188741D20BE557C009B6E26 /* Products */,
+				DDDD9797AA818D3ADEB8521B /* Pods */,
+				55698118298B074E448058D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5188741D20BE557C009B6E26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5188741C20BE557C009B6E26 /* ZYCycleScrollView.app */,
+				5188743020BE557D009B6E26 /* ZYCycleScrollViewTests.xctest */,
+				5188743B20BE557D009B6E26 /* ZYCycleScrollViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5188741E20BE557C009B6E26 /* ZYCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5188741F20BE557C009B6E26 /* AppDelegate.swift */,
+				5188742120BE557C009B6E26 /* ViewController.swift */,
+				5188742320BE557C009B6E26 /* Main.storyboard */,
+				5188744D20BE55CF009B6E26 /* ZYCycleScrollView */,
+				5188742620BE557D009B6E26 /* Assets.xcassets */,
+				5188742820BE557D009B6E26 /* LaunchScreen.storyboard */,
+				5188742B20BE557D009B6E26 /* Info.plist */,
+			);
+			path = ZYCycleScrollView;
+			sourceTree = "<group>";
+		};
+		5188743320BE557D009B6E26 /* ZYCycleScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				5188743420BE557D009B6E26 /* ZYCycleScrollViewTests.swift */,
+				5188743620BE557D009B6E26 /* Info.plist */,
+			);
+			path = ZYCycleScrollViewTests;
+			sourceTree = "<group>";
+		};
+		5188743E20BE557D009B6E26 /* ZYCycleScrollViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5188743F20BE557D009B6E26 /* ZYCycleScrollViewUITests.swift */,
+				5188744120BE557D009B6E26 /* Info.plist */,
+			);
+			path = ZYCycleScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		5188744D20BE55CF009B6E26 /* ZYCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5188744E20BE55E9009B6E26 /* ZYCycleScrollView.swift */,
+			);
+			path = ZYCycleScrollView;
+			sourceTree = "<group>";
+		};
+		55698118298B074E448058D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5188745020BE69A4009B6E26 /* Kingfisher.framework */,
+				1178CACA65E5E567CB8706F0 /* Pods_ZYCycleScrollView.framework */,
+				F3C2E4A91A41C31FED767AEF /* Pods_ZYCycleScrollViewTests.framework */,
+				79AB2BC9BB45A08BDBFADBA1 /* Pods_ZYCycleScrollViewUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDDD9797AA818D3ADEB8521B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA58EBC680C2917C0EB787 /* Pods-ZYCycleScrollView.debug.xcconfig */,
+				358384BF1D8CC7D354E093A0 /* Pods-ZYCycleScrollView.release.xcconfig */,
+				95B923DC5A093C2E8F3A48B7 /* Pods-ZYCycleScrollViewTests.debug.xcconfig */,
+				F9019CA9952E85D78AABB2A0 /* Pods-ZYCycleScrollViewTests.release.xcconfig */,
+				C64CE8FB7161667D4659ACA6 /* Pods-ZYCycleScrollViewUITests.debug.xcconfig */,
+				D98D5EDBEF275BF02E511D98 /* Pods-ZYCycleScrollViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5188741B20BE557C009B6E26 /* ZYCycleScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5188744420BE557D009B6E26 /* Build configuration list for PBXNativeTarget "ZYCycleScrollView" */;
+			buildPhases = (
+				B7F8F299948CBD0753A9B58C /* [CP] Check Pods Manifest.lock */,
+				5188741820BE557C009B6E26 /* Sources */,
+				5188741920BE557C009B6E26 /* Frameworks */,
+				5188741A20BE557C009B6E26 /* Resources */,
+				1D729CFB42CD3BE8B7ACE53C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYCycleScrollView;
+			productName = ZYCycleScrollView;
+			productReference = 5188741C20BE557C009B6E26 /* ZYCycleScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5188742F20BE557D009B6E26 /* ZYCycleScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5188744720BE557D009B6E26 /* Build configuration list for PBXNativeTarget "ZYCycleScrollViewTests" */;
+			buildPhases = (
+				265DBC53B4CC0242791E5716 /* [CP] Check Pods Manifest.lock */,
+				5188742C20BE557D009B6E26 /* Sources */,
+				5188742D20BE557D009B6E26 /* Frameworks */,
+				5188742E20BE557D009B6E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5188743220BE557D009B6E26 /* PBXTargetDependency */,
+			);
+			name = ZYCycleScrollViewTests;
+			productName = ZYCycleScrollViewTests;
+			productReference = 5188743020BE557D009B6E26 /* ZYCycleScrollViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5188743A20BE557D009B6E26 /* ZYCycleScrollViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5188744A20BE557D009B6E26 /* Build configuration list for PBXNativeTarget "ZYCycleScrollViewUITests" */;
+			buildPhases = (
+				3FA6ACD80964344609289ADE /* [CP] Check Pods Manifest.lock */,
+				5188743720BE557D009B6E26 /* Sources */,
+				5188743820BE557D009B6E26 /* Frameworks */,
+				5188743920BE557D009B6E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5188743D20BE557D009B6E26 /* PBXTargetDependency */,
+			);
+			name = ZYCycleScrollViewUITests;
+			productName = ZYCycleScrollViewUITests;
+			productReference = 5188743B20BE557D009B6E26 /* ZYCycleScrollViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5188741420BE557C009B6E26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZY;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "石志愿";
+				TargetAttributes = {
+					5188741B20BE557C009B6E26 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					5188742F20BE557D009B6E26 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 5188741B20BE557C009B6E26;
+					};
+					5188743A20BE557D009B6E26 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 5188741B20BE557C009B6E26;
+					};
+				};
+			};
+			buildConfigurationList = 5188741720BE557C009B6E26 /* Build configuration list for PBXProject "ZYCycleScrollView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5188741320BE557C009B6E26;
+			productRefGroup = 5188741D20BE557C009B6E26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5188741B20BE557C009B6E26 /* ZYCycleScrollView */,
+				5188742F20BE557D009B6E26 /* ZYCycleScrollViewTests */,
+				5188743A20BE557D009B6E26 /* ZYCycleScrollViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5188741A20BE557C009B6E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5188742A20BE557D009B6E26 /* LaunchScreen.storyboard in Resources */,
+				5188742720BE557D009B6E26 /* Assets.xcassets in Resources */,
+				5188742520BE557C009B6E26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5188742E20BE557D009B6E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5188743920BE557D009B6E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D729CFB42CD3BE8B7ACE53C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZYCycleScrollView/Pods-ZYCycleScrollView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYCycleScrollView/Pods-ZYCycleScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		265DBC53B4CC0242791E5716 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZYCycleScrollViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FA6ACD80964344609289ADE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZYCycleScrollViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7F8F299948CBD0753A9B58C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZYCycleScrollView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5188741820BE557C009B6E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5188742220BE557C009B6E26 /* ViewController.swift in Sources */,
+				5188742020BE557C009B6E26 /* AppDelegate.swift in Sources */,
+				5188744F20BE55E9009B6E26 /* ZYCycleScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5188742C20BE557D009B6E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5188743520BE557D009B6E26 /* ZYCycleScrollViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5188743720BE557D009B6E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5188744020BE557D009B6E26 /* ZYCycleScrollViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5188743220BE557D009B6E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5188741B20BE557C009B6E26 /* ZYCycleScrollView */;
+			targetProxy = 5188743120BE557D009B6E26 /* PBXContainerItemProxy */;
+		};
+		5188743D20BE557D009B6E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5188741B20BE557C009B6E26 /* ZYCycleScrollView */;
+			targetProxy = 5188743C20BE557D009B6E26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5188742320BE557C009B6E26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5188742420BE557C009B6E26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5188742820BE557D009B6E26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5188742920BE557D009B6E26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5188744220BE557D009B6E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5188744320BE557D009B6E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5188744520BE557D009B6E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CEA58EBC680C2917C0EB787 /* Pods-ZYCycleScrollView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZYCycleScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FU.com.ZYCycleScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5188744620BE557D009B6E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 358384BF1D8CC7D354E093A0 /* Pods-ZYCycleScrollView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZYCycleScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FU.com.ZYCycleScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5188744820BE557D009B6E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95B923DC5A093C2E8F3A48B7 /* Pods-ZYCycleScrollViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZYCycleScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FU.com.ZYCycleScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYCycleScrollView.app/ZYCycleScrollView";
+			};
+			name = Debug;
+		};
+		5188744920BE557D009B6E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9019CA9952E85D78AABB2A0 /* Pods-ZYCycleScrollViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZYCycleScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FU.com.ZYCycleScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYCycleScrollView.app/ZYCycleScrollView";
+			};
+			name = Release;
+		};
+		5188744B20BE557D009B6E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C64CE8FB7161667D4659ACA6 /* Pods-ZYCycleScrollViewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZYCycleScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FU.com.ZYCycleScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZYCycleScrollView;
+			};
+			name = Debug;
+		};
+		5188744C20BE557D009B6E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D98D5EDBEF275BF02E511D98 /* Pods-ZYCycleScrollViewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZYCycleScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FU.com.ZYCycleScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZYCycleScrollView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5188741720BE557C009B6E26 /* Build configuration list for PBXProject "ZYCycleScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5188744220BE557D009B6E26 /* Debug */,
+				5188744320BE557D009B6E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5188744420BE557D009B6E26 /* Build configuration list for PBXNativeTarget "ZYCycleScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5188744520BE557D009B6E26 /* Debug */,
+				5188744620BE557D009B6E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5188744720BE557D009B6E26 /* Build configuration list for PBXNativeTarget "ZYCycleScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5188744820BE557D009B6E26 /* Debug */,
+				5188744920BE557D009B6E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5188744A20BE557D009B6E26 /* Build configuration list for PBXNativeTarget "ZYCycleScrollViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5188744B20BE557D009B6E26 /* Debug */,
+				5188744C20BE557D009B6E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5188741420BE557C009B6E26 /* Project object */;
+}
