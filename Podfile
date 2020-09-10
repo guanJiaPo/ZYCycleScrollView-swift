@@ -6,7 +6,7 @@ target 'ZYCycleScrollView' do
   use_frameworks!
 
   # Pods for ZYCycleScrollView
-  pod 'Kingfisher'
+  pod 'Kingfisher', '~> 4.10.1'
   
   target 'ZYCycleScrollViewTests' do
     inherit! :search_paths

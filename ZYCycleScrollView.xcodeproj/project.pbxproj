@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2347023B858DFB125C408BBF /* Pods_ZYCycleScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1178CACA65E5E567CB8706F0 /* Pods_ZYCycleScrollView.framework */; };
+		39AAB6FA23B9AE1500FB75CA /* ZYZoomCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AAB6F623B9AE1500FB75CA /* ZYZoomCycleScrollView.swift */; };
+		39AAB6FB23B9AE1500FB75CA /* ZYZoomCycleScrollLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AAB6F723B9AE1500FB75CA /* ZYZoomCycleScrollLayout.swift */; };
+		39AAB6FC23B9AE1500FB75CA /* ZYPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AAB6F823B9AE1500FB75CA /* ZYPageControl.swift */; };
+		39AAB6FD23B9AE1500FB75CA /* ZYCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AAB6F923B9AE1500FB75CA /* ZYCycleScrollView.swift */; };
 		5188742020BE557C009B6E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188741F20BE557C009B6E26 /* AppDelegate.swift */; };
 		5188742220BE557C009B6E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188742120BE557C009B6E26 /* ViewController.swift */; };
 		5188742520BE557C009B6E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5188742320BE557C009B6E26 /* Main.storyboard */; };
@@ -15,7 +19,6 @@
 		5188742A20BE557D009B6E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5188742820BE557D009B6E26 /* LaunchScreen.storyboard */; };
 		5188743520BE557D009B6E26 /* ZYCycleScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188743420BE557D009B6E26 /* ZYCycleScrollViewTests.swift */; };
 		5188744020BE557D009B6E26 /* ZYCycleScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188743F20BE557D009B6E26 /* ZYCycleScrollViewUITests.swift */; };
-		5188744F20BE55E9009B6E26 /* ZYCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188744E20BE55E9009B6E26 /* ZYCycleScrollView.swift */; };
 		5188745120BE69A4009B6E26 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5188745020BE69A4009B6E26 /* Kingfisher.framework */; };
 		E34248B05034CF06DF38F3C7 /* Pods_ZYCycleScrollViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AB2BC9BB45A08BDBFADBA1 /* Pods_ZYCycleScrollViewUITests.framework */; };
 		F7DAB2FE4A91C6D393AE65F4 /* Pods_ZYCycleScrollViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C2E4A91A41C31FED767AEF /* Pods_ZYCycleScrollViewTests.framework */; };
@@ -41,6 +44,10 @@
 /* Begin PBXFileReference section */
 		1178CACA65E5E567CB8706F0 /* Pods_ZYCycleScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYCycleScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		358384BF1D8CC7D354E093A0 /* Pods-ZYCycleScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYCycleScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYCycleScrollView/Pods-ZYCycleScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		39AAB6F623B9AE1500FB75CA /* ZYZoomCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYZoomCycleScrollView.swift; sourceTree = "<group>"; };
+		39AAB6F723B9AE1500FB75CA /* ZYZoomCycleScrollLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYZoomCycleScrollLayout.swift; sourceTree = "<group>"; };
+		39AAB6F823B9AE1500FB75CA /* ZYPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYPageControl.swift; sourceTree = "<group>"; };
+		39AAB6F923B9AE1500FB75CA /* ZYCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCycleScrollView.swift; sourceTree = "<group>"; };
 		5188741C20BE557C009B6E26 /* ZYCycleScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYCycleScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5188741F20BE557C009B6E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5188742120BE557C009B6E26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +61,6 @@
 		5188743B20BE557D009B6E26 /* ZYCycleScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYCycleScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5188743F20BE557D009B6E26 /* ZYCycleScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYCycleScrollViewUITests.swift; sourceTree = "<group>"; };
 		5188744120BE557D009B6E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5188744E20BE55E9009B6E26 /* ZYCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYCycleScrollView.swift; sourceTree = "<group>"; };
 		5188745020BE69A4009B6E26 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AB2BC9BB45A08BDBFADBA1 /* Pods_ZYCycleScrollViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYCycleScrollViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEA58EBC680C2917C0EB787 /* Pods-ZYCycleScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYCycleScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYCycleScrollView/Pods-ZYCycleScrollView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +100,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39AAB6F423B9AE1500FB75CA /* ZYCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				39AAB6F523B9AE1500FB75CA /* Zoom */,
+				39AAB6F823B9AE1500FB75CA /* ZYPageControl.swift */,
+				39AAB6F923B9AE1500FB75CA /* ZYCycleScrollView.swift */,
+			);
+			path = ZYCycleScrollView;
+			sourceTree = "<group>";
+		};
+		39AAB6F523B9AE1500FB75CA /* Zoom */ = {
+			isa = PBXGroup;
+			children = (
+				39AAB6F623B9AE1500FB75CA /* ZYZoomCycleScrollView.swift */,
+				39AAB6F723B9AE1500FB75CA /* ZYZoomCycleScrollLayout.swift */,
+			);
+			path = Zoom;
+			sourceTree = "<group>";
+		};
 		5188741320BE557C009B6E26 = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +146,8 @@
 			children = (
 				5188741F20BE557C009B6E26 /* AppDelegate.swift */,
 				5188742120BE557C009B6E26 /* ViewController.swift */,
+				39AAB6F423B9AE1500FB75CA /* ZYCycleScrollView */,
 				5188742320BE557C009B6E26 /* Main.storyboard */,
-				5188744D20BE55CF009B6E26 /* ZYCycleScrollView */,
 				5188742620BE557D009B6E26 /* Assets.xcassets */,
 				5188742820BE557D009B6E26 /* LaunchScreen.storyboard */,
 				5188742B20BE557D009B6E26 /* Info.plist */,
@@ -146,14 +171,6 @@
 				5188744120BE557D009B6E26 /* Info.plist */,
 			);
 			path = ZYCycleScrollViewUITests;
-			sourceTree = "<group>";
-		};
-		5188744D20BE55CF009B6E26 /* ZYCycleScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				5188744E20BE55E9009B6E26 /* ZYCycleScrollView.swift */,
-			);
-			path = ZYCycleScrollView;
 			sourceTree = "<group>";
 		};
 		55698118298B074E448058D7 /* Frameworks */ = {
@@ -317,17 +334,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZYCycleScrollView/Pods-ZYCycleScrollView-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZYCycleScrollView/Pods-ZYCycleScrollView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZYCycleScrollView/Pods-ZYCycleScrollView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYCycleScrollView/Pods-ZYCycleScrollView-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZYCycleScrollView/Pods-ZYCycleScrollView-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		265DBC53B4CC0242791E5716 /* [CP] Check Pods Manifest.lock */ = {
@@ -392,8 +408,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5188742220BE557C009B6E26 /* ViewController.swift in Sources */,
+				39AAB6FC23B9AE1500FB75CA /* ZYPageControl.swift in Sources */,
+				39AAB6FB23B9AE1500FB75CA /* ZYZoomCycleScrollLayout.swift in Sources */,
 				5188742020BE557C009B6E26 /* AppDelegate.swift in Sources */,
-				5188744F20BE55E9009B6E26 /* ZYCycleScrollView.swift in Sources */,
+				39AAB6FA23B9AE1500FB75CA /* ZYZoomCycleScrollView.swift in Sources */,
+				39AAB6FD23B9AE1500FB75CA /* ZYCycleScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,15 +587,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25PVKJ68JW;
 				INFOPLIST_FILE = ZYCycleScrollView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FU.com.ZYCycleScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -587,15 +607,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25PVKJ68JW;
 				INFOPLIST_FILE = ZYCycleScrollView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FU.com.ZYCycleScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

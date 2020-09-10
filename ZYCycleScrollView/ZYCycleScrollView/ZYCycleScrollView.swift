@@ -9,13 +9,10 @@
 import UIKit
 import Kingfisher
 
-let currentTintColor = UIColor(red: 51/255.0, green: 51/255.0, blue: 51/255.0, alpha: 1.0)
-let pageTintColor = UIColor(red: 204/255.0, green: 204/255.0, blue: 204/255.0, alpha: 1.0)
-
 @objc protocol ZYCycleScrollViewDelegate {
     func numberOfPages()  -> (Int)
     func cycleScrollView(cycleScrollView: ZYCycleScrollView, imageDataForItemAtIndex index: Int) -> (Any)
-    @objc optional func cycleScrollView(cycleScrollView: ZYCycleScrollView, didSelectedPageAtIndex  index: Int, image: UIImage?)
+    @objc optional func cycleScrollView(cycleScrollView: ZYCycleScrollView, didSelectedPageAtIndex index: Int, image: UIImage?)
 }
 
 enum ZYScrollDirection {
@@ -44,11 +41,33 @@ class ZYCycleScrollView: UIView {
             }
         }
     }
+    
+    //MARK: - public property
+    weak var delegate : ZYCycleScrollViewDelegate?
+    /// 是否隐藏页数
+    var hidePageControl = false
+    /// 是否自动滚动
+    var autoScroll = true
+    /// 自动滚动的间隔
+    var autoScrollTimeInterval = 5.0
 
+    /// 选中颜色
+    var currentPageTintColor = UIColor(red: 51/255.0, green: 51/255.0, blue: 51/255.0, alpha: 1.0) {
+        didSet {
+            self.pageControl.indicatorCurrentTintColor = currentPageTintColor
+        }
+    }
+    /// 非选中颜色
+    var pageTintColor = UIColor(red: 204/255.0, green: 204/255.0, blue: 204/255.0, alpha: 1.0) {
+        didSet {
+            self.pageControl.indicatorTintColor = pageTintColor
+        }
+    }
+    
     //MARK: - public mothed
     
     public func reloadData() {
-        guard let pageCount = self.delegete?.numberOfPages() else {
+        guard let pageCount = self.delegate?.numberOfPages() else {
             return
         }
         imageCount = pageCount
@@ -70,7 +89,7 @@ class ZYCycleScrollView: UIView {
     
     /// 加载图片
     private func loadImage(imageView:UIImageView, index:Int) {
-        guard let imageData = self.delegete?.cycleScrollView(cycleScrollView: self, imageDataForItemAtIndex:index) else {
+        guard let imageData = self.delegate?.cycleScrollView(cycleScrollView: self, imageDataForItemAtIndex:index) else {
             return
         }
         if imageData is String {
@@ -105,15 +124,9 @@ class ZYCycleScrollView: UIView {
     /// 图片点击事件
     @objc private func tapCurrentImageView() {
         if imageCount > currentIndex {
-            self.delegete?.cycleScrollView?(cycleScrollView: self, didSelectedPageAtIndex: currentIndex, image: self.currentImageView.image)
+            self.delegate?.cycleScrollView?(cycleScrollView: self, didSelectedPageAtIndex: currentIndex, image: self.currentImageView.image)
         }
     }
-    
-    //MARK: - public property
-    weak var delegete : ZYCycleScrollViewDelegate?
-    var hidePageControl = false /// 是否隐藏页数
-    var autoScroll = true       /// 是否自动滚动
-    var autoScrollTimeInterval = 5.0 /// 自动滚动的间隔
     
     //MARK: - private property
     private var currentIndex = 0 /// 当前显示的图片的index
@@ -137,7 +150,7 @@ class ZYCycleScrollView: UIView {
     private lazy var currentImageView: UIImageView = {[unowned self] in
         let currentImageView = UIImageView(frame: CGRect(x: self.scrollView.frame.size.width, y: 0, width: self.scrollView.frame.size.width, height: self.scrollView.frame.size.height))
         currentImageView.clipsToBounds = true
-        currentImageView.contentMode = UIViewContentMode.scaleAspectFill
+        currentImageView.contentMode = UIView.ContentMode.scaleAspectFill
         currentImageView.isUserInteractionEnabled = true
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapCurrentImageView))
         currentImageView.addGestureRecognizer(tap)
@@ -147,20 +160,20 @@ class ZYCycleScrollView: UIView {
     private lazy var otherImageView: UIImageView = {[unowned self] in
         let otherImageView = UIImageView(frame: CGRect(x: self.scrollView.frame.size.width * 2, y: 0, width: self.scrollView.frame.size.width, height: self.scrollView.frame.size.height))
         otherImageView.clipsToBounds = true
-        otherImageView.contentMode = UIViewContentMode.scaleAspectFill
+        otherImageView.contentMode = UIView.ContentMode.scaleAspectFill
         return otherImageView;
     }()
     
-    private lazy var pageControl: UIPageControl = {[unowned self] in
-        let pageControl = UIPageControl(frame: CGRect(x: 0, y: self.frame.size.height - 24, width: self.scrollView.frame.size.width, height: 24))
-        pageControl.hidesForSinglePage = true
-        pageControl.currentPageIndicatorTintColor = currentTintColor
-        pageControl.pageIndicatorTintColor = pageTintColor
+    private lazy var pageControl: ZYPageControl = {[unowned self] in
+        let pageControl = ZYPageControl(frame: CGRect(x: 0, y: self.frame.size.height - 24, width: self.scrollView.frame.size.width, height: 24))
+        pageControl.indicatorCurrentTintColor = currentPageTintColor
+        pageControl.indicatorTintColor = pageTintColor
         return pageControl
     }()
     
     private lazy var timer: Timer = {[unowned self] in
         let timer = Timer.scheduledTimer(timeInterval: autoScrollTimeInterval, target: self, selector: #selector(autoCycleScroll), userInfo: nil, repeats: true)
+        RunLoop.current.add(timer, forMode: RunLoop.Mode.common)
         return timer
     }()
 }
